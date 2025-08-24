@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Kumar Jha - Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h3>Nikhil Kumar Jha</h3>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="close-icon">&times;</i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                <div class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Hi, I'm <span class="hero__name">Nikhil Kumar Jha</span>
+                </h1>
+                <div class="hero__subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero__description">
+                    Passionate about building innovative solutions with cutting-edge technology
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn--outline">View My Work</a>
+                    <button id="download-resume" class="btn btn--secondary">Download Resume</button>
+                </div>
+            </div>
+            <div class="hero__social">
+                <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/nikkhil2708" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__subtitle">Get to know me better</p>
+            </div>
+            <div class="about__container">
+                <div class="about__content">
+                    <h3 class="about__title">Full-Stack Developer & AI/ML Enthusiast</h3>
+                    <p class="about__description">
+                        I'm a passionate Computer Science student specializing in Artificial Intelligence and Machine Learning. 
+                        With hands-on experience in full-stack development and AI/ML technologies, I love creating innovative 
+                        solutions that make a real impact. I'm always eager to learn new technologies and take on challenging projects.
+                    </p>
+                    <div class="about__info">
+                        <div class="about__info-item">
+                            <span class="about__info-title">Email:</span>
+                            <span class="about__info-data">nikhiljha5046@gmail.com</span>
+                        </div>
+                        <div class="about__info-item">
+                            <span class="about__info-title">Phone:</span>
+                            <span class="about__info-data">+917982787007</span>
+                        </div>
+                        <div class="about__info-item">
+                            <span class="about__info-title">Location:</span>
+                            <span class="about__info-data">Greater Noida, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__education">
+                    <h3 class="about__education-title">Education</h3>
+                    <div class="education__container">
+                        <div class="education__item">
+                            <h4 class="education__degree">B.Tech in Computer Science and Engineering (AI/ML)</h4>
+                            <p class="education__institution">Noida Institute of Engineering and Technology</p>
+                            <span class="education__duration">2022 - 2026</span>
+                        </div>
+                        <div class="education__item">
+                            <h4 class="education__degree">Intermediate School</h4>
+                            <p class="education__institution">Dashmesh Public School, Delhi</p>
+                            <span class="education__duration">2019 - 2021</span>
+                        </div>
+                        <div class="education__item">
+                            <h4 class="education__degree">High School</h4>
+                            <p class="education__institution">Dashmesh Public School, Delhi</p>
+                            <span class="education__duration">2017 - 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Technical Skills</h2>
+                <p class="section__subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills__container">
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Programming Languages</h3>
+                    <div class="skills__list">
+                        <div class="skill__item">
+                            <span class="skill__name">Java</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">Python</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">JavaScript</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">TypeScript</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">SQL</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frameworks & Libraries</h3>
+                    <div class="skills__list">
+                        <div class="skill__item">
+                            <span class="skill__name">React.js</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">Next.js</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">Node.js</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="83"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">Express.js</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">TensorFlow</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <span class="skill__name">PyTorch</span>
+                            <div class="skill__bar">
+                                <div class="skill__progress" data-percent="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Tools & Technologies</h3>
+                    <div class="skills__grid">
+                        <div class="skill__tag">Git</div>
+                        <div class="skill__tag">GitHub</div>
+                        <div class="skill__tag">GCP</div>
+                        <div class="skill__tag">AWS</div>
+                        <div class="skill__tag">Docker</div>
+                        <div class="skill__tag">MongoDB</div>
+                        <div class="skill__tag">Postman</div>
+                        <div class="skill__tag">Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Experience</h2>
+                <p class="section__subtitle">Professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__title">Machine Learning Intern</h3>
+                            <span class="timeline__company">NextGenInterns</span>
+                            <span class="timeline__duration">July 2024 - August 2024</span>
+                        </div>
+                        <ul class="timeline__description">
+                            <li>Successfully completed a virtual internship at NextGenInterns, developing multiple machine learning models from scratch using Python and popular ML libraries.</li>
+                            <li>Built end-to-end ML projects demonstrating skills in supervised learning, classification, and regression using tools like Scikit-learn, Pandas, and Matplotlib.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__title">AI-ML Virtual Internship</h3>
+                            <span class="timeline__company">Edunet Foundation</span>
+                            <span class="timeline__duration">Sep. 2023 - Nov. 2023</span>
+                        </div>
+                        <ul class="timeline__description">
+                            <li>Completed a virtual internship under the Edunet Foundation in collaboration with AICTE, focusing on skill development and emerging technologies.</li>
+                            <li>Gained valuable insights into the world of Artificial Intelligence and Machine Learning on the AWS platform.</li>
+                            <li>Gained hands-on experience through project-based learning, improving problem-solving and technical skills in a real-world context.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Featured Projects</h2>
+                <p class="section__subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects__container">
+                <div class="project__card">
+                    <div class="project__header">
+                        <h3 class="project__title">Workout Recommendation System</h3>
+                        <div class="project__tech">
+                            <span class="tech__tag">React.js</span>
+                            <span class="tech__tag">Tailwind CSS</span>
+                            <span class="tech__tag">Node.js</span>
+                            <span class="tech__tag">Express.js</span>
+                            <span class="tech__tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project__description">
+                        <ul>
+                            <li>Developed a rule-based engine in JavaScript to generate personalized workout plans from user fitness data.</li>
+                            <li>Built a responsive dashboard using React and Tailwind CSS to visualize plans and track user progress.</li>
+                            <li>Implemented interactive data charts with Recharts for at-a-glance progress monitoring.</li>
+                        </ul>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">View Code</a>
+                        <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project__card">
+                    <div class="project__header">
+                        <h3 class="project__title">Travel Itinerary Generator</h3>
+                        <div class="project__tech">
+                            <span class="tech__tag">React.js</span>
+                            <span class="tech__tag">Tailwind CSS</span>
+                            <span class="tech__tag">Node.js</span>
+                            <span class="tech__tag">MongoDB</span>
+                            <span class="tech__tag">Gemini API</span>
+                        </div>
+                    </div>
+                    <div class="project__description">
+                        <ul>
+                            <li>Developed a full-stack MERN travel app with a Gemini AI-powered itinerary generator.</li>
+                            <li>Built a Node.js REST API to manage a MongoDB database and integrate a third-party AI service.</li>
+                            <li>Created a responsive, dark-themed React UI with Tailwind CSS for a state-managed user experience.</li>
+                        </ul>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">View Code</a>
+                        <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Certifications</h2>
+                <p class="section__subtitle">Professional achievements</p>
+            </div>
+            <div class="certifications__grid">
+                <div class="cert__card">
+                    <h4 class="cert__title">AWS Academy Certified: Cloud Foundations</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">AWS Academy Certified: Machine Learning Foundations</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">Microsoft Azure AI Certified: Document Intelligence</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">Microsoft Azure AI Certified: Vision Solution</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">Coursera Certified: Getting started with AI using IBM Watson</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">Infosys: React JS</h4>
+                </div>
+                <div class="cert__card">
+                    <h4 class="cert__title">Infosys: Spring and Angular</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Let's work together</p>
+            </div>
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h3 class="contact__info-title">Contact Information</h3>
+                    <div class="contact__item">
+                        <span class="contact__label">Email:</span>
+                        <a href="mailto:nikhiljha5046@gmail.com" class="contact__link">nikhiljha5046@gmail.com</a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__label">Phone:</span>
+                        <a href="tel:+917982787007" class="contact__link">+917982787007</a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__label">GitHub:</span>
+                        <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer" class="contact__link">github.com/nkj27</a>
+                    </div>
+                    <div class="contact__item">
+                        <span class="contact__label">LinkedIn:</span>
+                        <a href="https://linkedin.com/in/nikkhil2708" target="_blank" rel="noopener noreferrer" class="contact__link">linkedin.com/in/nikkhil2708</a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Nikhil Kumar Jha. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="https://github.com/nkj27" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/nikkhil2708" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
